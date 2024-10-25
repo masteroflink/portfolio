@@ -1,0 +1,18 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  flex: 1 0 50%;
+  width: 50%;
+}
+
+.about-details {
+  flex: 1 0 50%;
+}
+
+.about-desc {
+  font-size: large;
+}

@@ -1,0 +1,30 @@
+.section-title {
+    position: relative;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    height: .18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: purple;
+}
+
+.skills::after {
+    width: 3rem;
+}
+
+.projects::after {
+    width: 5rem;
+}
+
+.contact::after {
+    width: 4.5rem;
+}
+
+.about::after {
+    width: 3.5rem;
+}

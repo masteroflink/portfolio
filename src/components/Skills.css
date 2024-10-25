@@ -1,0 +1,46 @@
+.skills {
+  /* height: 100vh; */
+}
+
+.skills-chart {
+  width: 25vh;
+  height: 25vh;
+}
+
+.skills-content {
+  width: 100%;
+  display: flex;
+}
+
+.skills-desc {
+}
+
+.skills-title {
+  color: purple;
+  margin-bottom: 1rem;
+}
+
+.skills-tag {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.25rem;
+  padding-bottom: 0.5rem;
+  background-color: #92bdff;
+  border-radius: 0.25rem;
+}
+
+.skills-tags {
+}
+
+.skills-img {
+  flex: 1 0 50%;
+  width: 50%;
+}
+
+.skills-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+.project-container {
+  margin: 0 1rem 0 1rem;
+}
+
+.project-img {
+  max-width: 100%;
+}
+
+.ext-link-icon {
+  float: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}

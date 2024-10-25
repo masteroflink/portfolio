@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(10, 0, 27);
+  margin-top: -2px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  padding: 3rem 1rem;
+  margin: auto;
+  color: rgb(255, 255, 255);
+}
+
+.footer-list-links {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  padding-bottom: 0.5em;
+}
+
+.footer-links {
+  color: #697477;
+  text-decoration: none;
+}

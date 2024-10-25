@@ -1,0 +1,17 @@
+.Home {
+  min-height: 75vh;
+  background-color: #3d34eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/home.jpg");
+  background-size: "cover";
+  background-position: "center";
+}
+
+.intro {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 5em;
+}
