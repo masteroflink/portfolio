@@ -9,6 +9,7 @@ const About = () => {
         <img
           className="about-img"
           src={`${process.env.PUBLIC_URL}/avatar.png`}
+          alt="https://cdn.pixabay.com/photo/2019/02/28/17/31/tasks-4026398_1280.jpg"
         />
         <div className="about-details">
           <h2>Bruce Bruno</h2>
