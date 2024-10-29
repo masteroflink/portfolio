@@ -1,0 +1,14 @@
+.fade-in {
+  opacity: 1;
+  transition: opacity 1.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+}
+
+/* Initially hide elements */
+.hidden {
+  opacity: 0;
+}
