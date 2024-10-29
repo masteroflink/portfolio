@@ -1,15 +1,14 @@
-.footer {
+.footer-main {
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgb(10, 0, 27);
-  margin-top: -2px;
+  padding-bottom: var(--section-padding);
 }
 
 .footer-inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   max-width: 1280px;
   padding: 3rem 1rem;
@@ -26,5 +25,10 @@
 
 .footer-links {
   color: #697477;
+  text-decoration: none;
+}
+
+.email-link {
+  color: whitesmoke;
   text-decoration: none;
 }

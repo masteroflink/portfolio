@@ -1,3 +1,7 @@
+.about-main {
+  padding-bottom: var(--section-padding);
+}
+
 .about-section {
   display: flex;
   justify-content: center;

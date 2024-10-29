@@ -1,12 +1,11 @@
-import './SectionTitle.css';
+import "./SectionTitle.css";
 
 const SectionTitle = ({ title }) => {
-
-    return (
-        <h2 className={`section-title ${title.toLowerCase()}`}>
-            {title}
-        </h2>
-    )
-}
+  return (
+    <div className="section-container">
+      <span className={`section-title ${title.toLowerCase()}`}>{title}</span>
+    </div>
+  );
+};
 
 export default SectionTitle;

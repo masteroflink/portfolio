@@ -1,4 +1,4 @@
-.Home {
+.Home-main {
   min-height: 75vh;
   background-color: #3d34eb;
   display: flex;
@@ -7,6 +7,7 @@
   background-image: url("/public/home.jpg");
   background-size: "cover";
   background-position: "center";
+  padding-bottom: var(--section-padding);
 }
 
 .intro {

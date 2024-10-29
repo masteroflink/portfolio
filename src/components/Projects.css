@@ -1,3 +1,7 @@
+.projects-main {
+  padding-bottom: var(--section-padding);
+}
+
 .projects-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
