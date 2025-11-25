@@ -1,36 +1,37 @@
 .section-container {
-  padding-bottom: 1rem;
+  padding-bottom: var(--space-12);
+  text-align: center;
 }
 
 .section-title {
   position: relative;
-  font-size: 2em;
-  font-weight: bold;
+  display: inline-block;
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-tight);
+  padding-bottom: var(--space-4);
 }
 
 .section-title::after {
-  position: absolute;
   content: "";
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 2.2rem;
-  background-color: purple;
+  position: absolute;
+  height: 4px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
 }
 
-.skills::after {
-  width: 3rem;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: var(--text-3xl);
+  }
 
-.projects::after {
-  width: 5rem;
-}
-
-.contact::after {
-  width: 4.5rem;
-}
-
-.about::after {
-  width: 3.5rem;
+  .section-container {
+    padding-bottom: var(--space-8);
+  }
 }

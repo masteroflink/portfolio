@@ -1,74 +1,130 @@
 body.active-download-modal {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .btn-download-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: auto 0;
-    font-size: 18px;
-    cursor: pointer;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.btn-download-modal:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .download-modal,
 .overlay {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    color: black;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: var(--z-modal);
 }
 
 .overlay {
-    background: rgba(49, 49, 49, 0.8);
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: var(--z-overlay);
 }
 
 .download-modal-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-background);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  max-width: 500px;
+  width: 90%;
+  z-index: calc(var(--z-overlay) + 1);
+  box-shadow: var(--shadow-xl);
+}
+
+.download-modal-content h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
 }
 
 .close-download-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-    cursor: pointer;
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  padding: var(--space-2);
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-fast),
+              background-color var(--transition-fast);
+}
+
+.close-download-modal:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
 }
 
 .file-list {
-    display: flex;
-    padding-inline-start: 0;
-    /* justify-content: space-between;
-    align-items: center; */
-}
-
-.file-name {
-    font-weight: bold;
-    font-size: large;
-}
-
-.file-download {
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .file-item {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    width: 100%;
-    border-style: groove;
-    padding-left: 1vh;
-    padding-right: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  transition: border-color var(--transition-fast);
+}
+
+.file-item:hover {
+  border-color: var(--color-accent);
+}
+
+.file-name {
+  font-weight: var(--font-medium);
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+}
+
+.file-actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.file-preview,
+.file-download {
+  cursor: pointer;
+  color: var(--color-accent);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-fast),
+              background-color var(--transition-fast);
+}
+
+.file-preview:hover,
+.file-download:hover {
+  color: var(--color-accent-light);
+  background-color: var(--color-accent-subtle);
 }

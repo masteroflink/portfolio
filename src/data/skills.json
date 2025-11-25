@@ -1,0 +1,14 @@
+{
+  "languages": ["Python", "Typescript", "Go", "Java", "Elixir"],
+  "frameworks": ["Django", "React", "FastAPI"],
+  "tools": [
+    "Google Cloud",
+    "Azure",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "Cloud Functions",
+    "PubSub"
+  ],
+  "databases": ["Big Query", "PostgreSQL", "MongoDB", "ElasticSearch", "Redis"]
+}
