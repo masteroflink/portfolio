@@ -1,11 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import DownloadModal from "./DownloadModal";
+import { useTheme } from "../context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
+  const { toggleTheme, isDark } = useTheme();
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -31,12 +34,26 @@ const Navbar = () => {
       </div>
       <div className="navbar-right">
         <DownloadModal />
-        <a className="socials" href="https://github.com/masteroflink">
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+        >
+          <FontAwesomeIcon icon={isDark ? faSun : faMoon} size="lg" />
+        </button>
+        <a
+          className="socials"
+          href="https://github.com/masteroflink"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faGithub} size="xl" />
         </a>
         <a
           className="socials"
           href="https://www.linkedin.com/in/bruce-bruno-159737111"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} size="xl" />
         </a>

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFileDownload,
   faCloudArrowDown,
+  faEye,
 } from "@fortawesome/free-solid-svg-icons";
 
 const DownloadModal = () => {
@@ -13,19 +14,20 @@ const DownloadModal = () => {
     setDownloadModal(!downloadModal);
   };
 
-  const downloadFile = () => {
-    const fileName = "bruce_bruno_f_resume.pdf";
-    console.log("start download file.");
+  const fileName = "bruce_bruno_f_resume.pdf";
+  const pdfUrl = `${process.env.PUBLIC_URL}/${fileName}`;
 
-    const pdfUrl = `${process.env.PUBLIC_URL}/${fileName}`;
+  const downloadFile = () => {
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = fileName; // specify the filename
+    link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
 
-    console.log(`file: ${fileName} successfully downloaded.`);
+  const previewFile = () => {
+    window.open(pdfUrl, "_blank");
   };
 
   if (downloadModal) {
@@ -48,14 +50,23 @@ const DownloadModal = () => {
           <div className="download-modal-content">
             <h2>File Download</h2>
             <ul className="file-list">
-              <div className="file-item">
-                <div>Resume</div>
-                <FontAwesomeIcon
-                  icon={faCloudArrowDown}
-                  onClick={downloadFile}
-                  className="file-download"
-                ></FontAwesomeIcon>
-              </div>
+              <li className="file-item">
+                <span className="file-name">Resume</span>
+                <div className="file-actions">
+                  <FontAwesomeIcon
+                    icon={faEye}
+                    onClick={previewFile}
+                    className="file-preview"
+                    title="Preview"
+                  />
+                  <FontAwesomeIcon
+                    icon={faCloudArrowDown}
+                    onClick={downloadFile}
+                    className="file-download"
+                    title="Download"
+                  />
+                </div>
+              </li>
             </ul>
 
             <button
