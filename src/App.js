@@ -6,8 +6,12 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    document.title = "Bruce Bruno";
+  }, []);
   return (
     <ThemeProvider>
       <div className="App">
