@@ -1,22 +1,9 @@
 import FadeInOnScroll from "./FadeInOnScroll";
 import SectionTitle from "./SectionTitle";
 import "./Skills.css";
+import skillsData from "../data/skills.json";
 
 const Skills = () => {
-  const skillsData = {
-    languages: ["Python", "Typescript", "Go", "Java", "Elixir"],
-    frameworks: ["Django", "React", "FastAPI"],
-    tools: [
-      "Google Cloud",
-      "Azure",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "Cloud Functions",
-      "PubSub",
-    ],
-    databases: ["Big Query", "PostgreSQL", "MongoDB", "ElasticSearch", "Redis"],
-  };
 
   const capitalize = (string) => {
     if (!string) return ""; // Handle empty strings or undefined input

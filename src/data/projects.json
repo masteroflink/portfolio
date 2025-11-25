@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Resume Manager",
+    "url": "https://github.com/masteroflink/resume-manager",
+    "imgSrc": "/resume_manager.jpg",
+    "skills": ["Claude Code", "Bash", "JSON"],
+    "description": "Allows the user to use artificial intelligence in order to create and update resumes. Will also convert resumes into JSON format. This will also output resumes in over 15 different theme so you will be able to choose the one fits you best."
+  },
+  {
+    "name": "Note Taker",
+    "url": "https://github.com/masteroflink/note-taker",
+    "imgSrc": "/note_taker.jpg",
+    "skills": ["Python", "HTML", "Django", "PostgreSQL"],
+    "description": "The Note Taker is a web application developed using Python's Django framework, leveraging PostgreSQL for efficient data management. It allows users to create, edit, and organize notes seamlessly, featuring user authentication and a responsive design for accessibility across devices. This project demonstrates expertise in Django development, database integration, and creating a user-friendly interface for effective note management."
+  },
+  {
+    "name": "Shopping Cart",
+    "url": "https://github.com/masteroflink/simple-shopping-cart",
+    "imgSrc": "/shopping_cart.jpg",
+    "skills": ["Go"],
+    "description": "The Shopping Cart CLI Application is a command-line tool developed in Go that enables users to manage their shopping cart efficiently. It features functionalities for adding, removing, and viewing items, as well as calculating the total cost, all through an intuitive interface. This project showcases proficiency in Go programming and demonstrates the ability to create effective, user-friendly applications for managing e-commerce tasks."
+  },
+  {
+    "name": "Todo List",
+    "url": "https://github.com/masteroflink/todo-list",
+    "imgSrc": "/todo_list.jpg",
+    "skills": ["Java", "PostgreSQL", "Docker", "API"],
+    "description": "The Todo List Backend API is a Java-based application that provides a RESTful interface for managing to-do items, utilizing PostgreSQL for data storage. Deployed in a Docker container, this project ensures scalability and easy integration into various environments. This implementation demonstrates expertise in Java development, API design, and containerization for efficient application deployment."
+  }
+]
