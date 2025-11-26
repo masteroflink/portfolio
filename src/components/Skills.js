@@ -33,7 +33,7 @@ const Skills = () => {
           </div>
           <img
             className="skills-img"
-            src={`${process.env.PUBLIC_URL}/skills.png`}
+            src={`${process.env.PUBLIC_URL}/images/skills.png`}
             alt="https://cdn.pixabay.com/photo/2019/02/28/17/31/tasks-4026398_1280.jpg"
           />
         </div>

@@ -18,7 +18,7 @@
   height: 600px;
   max-width: 100%;
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl);
+  box-shadow: none;
   object-fit: cover;
   object-position: center top;
 }
